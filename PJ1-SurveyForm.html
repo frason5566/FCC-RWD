@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="PJ1-SurveyForm.css" />
+    </head>
+    <body>
+        <h1 class="title">Registration Form</h1>
+        <p class="description">Please fill out this form with the required information </p>
+        <form class="survey-form" action="https://register-demo.freecodecamp.org">
+            <fieldset>
+                <label class="name-label">Name <input type="text" name="name" placeholder="Tom" required/></label>
+                <label class="email-label">Email <input type="email" name="email" placeholder="Tom@freecodecamp.org" required/></label>
+                <label class="number-label">Age(optional) <input type="number" name="age" min="13" max="120" placeholder="29" /></label>
+                <label>Which option best describes your current role? 
+                    <select name="dropdown">
+                        <option value="">Select current role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Prefer not to say</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label><input type="radio" name="account-type" class="dropdown"/> Personal Account</label>
+                <label><input type="radio" name="account-type" class="inline"/> Business Account</label>
+            </fieldset>
+
+            
+            <input type="submit" value="Submit">
+        </form> 
+
+    </body>
+</html>
