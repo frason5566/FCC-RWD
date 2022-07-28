@@ -2,7 +2,7 @@
 :root{
     --theme-1: #20aacc;
     --theme-2: #2044aa;
-    --theme-3: #992550;
+    --theme-3: #401010;
     --theme-4: #505060;
     --text-1: #402020;
     --text-2: #707070;
@@ -43,20 +43,16 @@ html{
     }
   }
 /* Text */
-h1, h2{
+/* h1, h2{
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
     text-align: center;
-}
+} */
 h1{
     font-size: 6rem;
 }
 h2{
     font-size: 4rem;
-}
-#welcome-section h2{
-    color: var(--text-4);
-    font-style: italic;
 }
 
 
@@ -71,16 +67,15 @@ body{
 img {
     display: block;
     width: 100%;
-  }
+}
 /* nav */
 .nav{
-    display: flex;
-    justify-content: flex-end;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0; 
+    /* left: 0;  */
     width: 100%;
-    height: 60px;
+    /* height: 60px; */
+    min-height: 60px;
     background-color: var(--theme-1);
     box-shadow: 0 1.5px rgb(0, 0, 0);
     z-index: 1;
@@ -100,29 +95,38 @@ nav > ul{
     font-size: 2.4rem;
     padding: 2rem;
 }
-
-/* main */
-main{
-    margin: 60px 0 0 0;
-    background-color: var(--back);
-    color: var(--text-3);
-    width: 100%;
-    border: 0;
+#nav-brand{
+    font-size: 2.4rem;
+    font-weight: bold;
 }
-/* sections */
+
 /* welcome */
 #welcome-section{
     background-color: var(--theme-4);
     height: 99vh;
+    margin-top: 60px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     display: flex;
+    font-family: sans-serif;
+    color: var(--text-3);
 }
 #personal{
     list-style: square;
-    /* justify-content: center; */
+    justify-content: center;
     /* margin-left: 500px; */
+}
+#welcome-section ul{
+    text-align: left;
+}
+#welcome-section h1{
+    color: var(--text-3);
+}
+#welcome-section h2{
+    color: var(--text-4);
+    font-style: italic;
+}
+#welcome-section p{
+    color: var(--text-2);
 }
 /* projects */
 #projects{
